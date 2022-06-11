@@ -25,8 +25,8 @@ Plug 'yuezk/vim-js'
 Plug 'mcchrish/nnn.vim'
 Plug 'tek256/simple-dark'
 call plug#end()
-vmap <C-c> y:call system("xclip -i -sel c", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
-vmap <C-x> y:call system("xclip -i -sel c", getreg("\""))<bar>d<bar><CR>:call system("xclip -i", getreg("\""))<CR>
-let g:deoplete#enable_at_startup = 1
+vmap <C-c> "+y
+vmap <C-x> "+x
+map <C-l> "+yy
 let g:javascript_plugin_jsdoc = 1
 let g:lightline = {'colorscheme': 'PaperColor'}
