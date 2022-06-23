@@ -15,6 +15,7 @@ set completeopt-=preview
 set background=dark
 set t_Co=256
 call plug#begin('~/.vim/autoload')
+Plug 'agude/vim-eldar'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'https://github.com/ap/vim-css-color'
 Plug 'mattn/emmet-vim'
